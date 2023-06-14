@@ -6,7 +6,7 @@ public class Camel extends Pack_Animal {
         super(id, name, birthday, loadCapacity);
     }
 
-    public void Comands() {
+    public static void Comands() {
         System.out.println("Выполняемые команды животного");
     }
 }

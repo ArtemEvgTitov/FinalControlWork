@@ -1,4 +1,5 @@
 package Pack_Animal;
+
 import Java.Animal;
 
 public class Pack_Animal extends Animal implements Employable {
@@ -10,11 +11,11 @@ public class Pack_Animal extends Animal implements Employable {
         this.loadCapacity = loadCapacity;
     }
 
-    public int getLoadCapacity(){
+    public int getLoadCapacity() {
         return loadCapacity;
     }
 
-    public void setLoadCapacity(int loadCapacity){
+    public void setLoadCapacity(int loadCapacity) {
         this.loadCapacity = loadCapacity;
     }
 
@@ -24,7 +25,8 @@ public class Pack_Animal extends Animal implements Employable {
 
     @Override
     public String toString() {
-        return String.format("id: %d\nName: %s\nРожден: %s\nГрузоподъемность: %s\n", getId(), getName(), getBirthday(), this.loadCapacity);
+        return String.format("id: %d\nName: %s\nРожден: %s\nГрузоподъемность: %s\n", getId(), getName(), getBirthday(),
+                this.loadCapacity);
     }
-    
+
 }

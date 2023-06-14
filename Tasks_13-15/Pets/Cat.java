@@ -8,7 +8,7 @@ public class Cat extends Pet {
 
     }
 
-    public void Comands(){
+    public static void Comands() {
         System.out.println("Выполняемые команды животного");
     }
 }

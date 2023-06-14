@@ -1,4 +1,5 @@
 package Pets;
+
 import Java.Animal;
 
 public class Pet extends Animal implements Playable {
@@ -9,21 +10,22 @@ public class Pet extends Animal implements Playable {
         this.thoroughbred = thoroughbred;
     }
 
-    public boolean getThoroughbred(){
+    public boolean getThoroughbred() {
         return thoroughbred;
     }
 
-    public void setThoroughbred(boolean thoroughbred){
+    public void setThoroughbred(boolean thoroughbred) {
         this.thoroughbred = thoroughbred;
     }
 
     @Override
     public void play() {
-        
+
     }
 
     @Override
     public String toString() {
-        return String.format("id: %d\nName: %s\nРожден: %s\nПородистый: %s\n", getId(), getName(), getBirthday(), this.thoroughbred);
+        return String.format("id: %d\nName: %s\nРожден: %s\nПородистый: %s\n", getId(), getName(), getBirthday(),
+                this.thoroughbred);
     }
 }
