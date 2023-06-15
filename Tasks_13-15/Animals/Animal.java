@@ -1,5 +1,8 @@
 package Animals;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Animal implements IAnimal {
 
     private int id;
@@ -8,7 +11,9 @@ public class Animal implements IAnimal {
     private String voise;
     private String eat;
 
-    protected Animal(int id, String name, String age, String voise, String eat){
+    List<String> commands = new ArrayList<>();
+
+    protected Animal(int id, String name, String age, String voise, String eat) {
         this.id = id;
         this.name = name;
         this.age = age;
@@ -69,5 +74,19 @@ public class Animal implements IAnimal {
     @Override
     public String toString() {
         return "\nID: " + id + "\nName: " + name + "\nAge: " + age + "\nVoise: " + voise + "\nEat: " + eat;
+    }
+
+    public void addCommand(String command) {
+        this.commands.add(command);
+    }
+
+    public void printCommand() {
+        if (commands.size() == 0) {
+            System.out.println("Список команд пуст");
+        } else {
+            for (int i = 0; i < commands.size() - 1; i++) {
+                System.out.println(commands.get(i));
+            }
+        }
     }
 }
