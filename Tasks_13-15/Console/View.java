@@ -50,6 +50,9 @@ public class View {
                         """);
     }
 
+    /**
+    * Метод поиска животного по ID
+    */
     private int searchID(){
         List<Animal> animals = new ArrayList<>();
         animals.addAll(pets);
@@ -58,6 +61,9 @@ public class View {
         return id;
     }
 
+    /**
+    * Метод добавления нового животного
+    */
     public void addAnimal() throws ChoiseError {
         int choiseAnimals = 0;
         int choiseType = 0;
@@ -127,6 +133,9 @@ public class View {
         }
     }
 
+    /**
+    * Метод печати выбранного вида животных
+    */
     public void printAnimals() throws ChoiseError {
         int choise = 0;
         System.out.println("""
@@ -155,6 +164,9 @@ public class View {
         }
     }
 
+    /**
+    * Метод печати всех животных
+    */
     public void printAllAnimals(){
         List<Animal> animals = new ArrayList<>();
         animals.addAll(pets);
@@ -168,6 +180,9 @@ public class View {
         }
     }
 
+    /**
+    * Метод добавления новой команды
+    */
     public void newCommand() throws ChoiseError {
         List<Animal> animals = new ArrayList<>();
         int id = 0;
@@ -190,6 +205,9 @@ public class View {
         }
     }
 
+    /**
+    * Метод печати всех команд выбранного животного
+    */
     public void printCommand() throws ChoiseError {
         List<Animal> animals = new ArrayList<>();
         int id = 0;
