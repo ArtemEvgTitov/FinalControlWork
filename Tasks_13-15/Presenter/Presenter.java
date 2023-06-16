@@ -4,9 +4,14 @@ package Presenter;
 import Console.View;
 import Presenter.Exceptions.ChoiseError;
 
-
+/**
+ * Класс, содержащий запуск программы
+ */
 public class Presenter {
 
+    /**
+     * Метод запуска программы
+     */
     public void run() throws Exception {
         View view = new View();
         boolean start = true;
