@@ -3,6 +3,9 @@ package Animals;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Класс с конструктором Animal
+ */
 public class Animal implements IAnimal {
 
     private int id;
@@ -13,6 +16,14 @@ public class Animal implements IAnimal {
 
     List<String> commands = new ArrayList<>();
 
+    /**
+     * Конструктор
+     * @param id - ID животного
+     * @param name - имя животного
+     * @param age - возраст животного
+     * @param voise - голос животного
+     * @param eat - чем питается
+     */
     protected Animal(int id, String name, String age, String voise, String eat) {
         this.id = id;
         this.name = name;

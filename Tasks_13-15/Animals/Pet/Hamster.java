@@ -1,5 +1,8 @@
 package Animals.Pet;
 
+/**
+ * Класс с конструктором Hamster
+ */
 public class Hamster extends Pet {
 
     public Hamster(int id, String name, String age) {

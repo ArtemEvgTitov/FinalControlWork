@@ -1,5 +1,8 @@
 package Animals;
 
+/**
+ * Интерфейс для Animal
+ */
 public interface IAnimal {
 
     int getID();
