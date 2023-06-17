@@ -153,10 +153,12 @@ public class View {
             if (choise == 1) {
                 for (Pet pet : pets) {
                     System.out.println(pet.toString());
+                    pet.printCommand();
                 }
             } else if (choise == 2) {
                 for (PackAnimal packAnimal : packAnimals) {
                     System.out.println(packAnimal.toString());
+                    packAnimal.printCommand();
                 }
             } else {
                 throw new ChoiseError();
@@ -176,6 +178,7 @@ public class View {
         } else {
             for (Animal a : animals) {
                 System.out.println(a.toString());
+                a.printCommand();
             }
         }
     }
